@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playing with linear models</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Playing with linear models">
+  <meta name="author" content="Alan Luscombe">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Playing with linear models</h1>
+    <h2>Visualizing random data about a line</h2>
+    <p>Alan Luscombe<br/>Data Products course presentation</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>A Tool to explore linear models</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Students can easily play with the data parameters</li>
+<li>App provides insight through immediate visualization</li>
+<li>Linear model and fit estimate (R-squared) feedback</li>
+<li>Intuitive understanding of linear model</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The model concept</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A linear model based on some pseudo-random data, generated in R</p>
+
+<p><img src="assets/fig/block_1-1.png" alt="plot of chunk block_1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Generating linear data with some random error</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Generating linear data.</p>
+
+<pre><code>  y = a + b * x + e
+</code></pre>
+
+<p>y - a linear transformation of the x data with some random error added<br>
+a - is the intercept<br>
+b - is the slope<br>
+x - uniformly distributed random data<br>
+e - is normally distributed with standard deviation set by the user.  </p>
+
+<p>Note that student can change a, b, and e dynamically using sliders.</p>
+
+<p>A linear model is fitted to the generated data and plotted over the generated points.
+The R-squared value for the model is displayed to the user.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>ShinyApp Easy App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Enables students to dynamically visualize a linear model</li>
+<li>App implements the functionality in reactive manner</li>
+<li>No coding required from students</li>
+<li>Easily deployable to &#39;cloud&#39;</li>
+<li>Easy application and user management</li>
+</ul>
+
+<p>Thanks for your attention</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='A Tool to explore linear models'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The model concept'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Generating linear data with some random error'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='ShinyApp Easy App'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
